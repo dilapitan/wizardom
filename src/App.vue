@@ -60,9 +60,7 @@
       elevation="1"
       app
     >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer">
-        <v-icon>mdi-wizard-hat</v-icon>
-      </v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"> </v-app-bar-nav-icon>
 
       <v-toolbar-title>
         <h2>WIZARDOM</h2>
