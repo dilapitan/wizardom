@@ -1,6 +1,11 @@
 <template>
   <v-app>
-    <v-navigation-drawer v-model="drawer" app>
+    <v-navigation-drawer
+      color="navs"
+      v-model="drawer"
+      :clipped="$vuetify.breakpoint.lgAndUp"
+      app
+    >
       <v-list>
         <v-list-item>
           <v-icon class="mr-2">mdi-flask</v-icon>
@@ -40,11 +45,20 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app>
+    <v-app-bar
+      :clipped-left="$vuetify.breakpoint.lgAndUp"
+      color="navs"
+      elevation="1"
+      app
+    >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer">
         <v-icon>mdi-wizard-hat</v-icon>
       </v-app-bar-nav-icon>
-      <h2>Wizardom</h2>
+
+      <v-toolbar-title>
+        <h2>Wizardom</h2>
+      </v-toolbar-title>
+
       <v-spacer></v-spacer>
       <v-btn icon color="primary" x-large>
         <v-icon>mdi-magnify</v-icon>
@@ -55,9 +69,11 @@
       </v-btn>
     </v-app-bar>
 
-    <v-main>
-      <router-view />
-    </v-main>
+    <v-card color="background" flat height="100%">
+      <v-main>
+        <router-view />
+      </v-main>
+    </v-card>
   </v-app>
 </template>
 
