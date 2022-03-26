@@ -6,8 +6,9 @@
       <v-btn icon color="primary" x-large>
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
-      <v-btn @click="toggleTheme()" icon color="primary" x-large>
-        <v-icon>mdi-fire-off</v-icon>
+      <v-btn @click="toggleTheme()" icon color="accent" x-large>
+        <v-icon v-if="!$vuetify.theme.dark">mdi-fire-off</v-icon>
+        <v-icon v-else>mdi-fire</v-icon>
       </v-btn>
     </v-app-bar>
 
@@ -27,7 +28,7 @@ export default {
 
   methods: {
     toggleTheme() {
-      console.log('hello')
+      this.$vuetify.theme.dark = !this.$vuetify.theme.dark
     },
   },
 }
