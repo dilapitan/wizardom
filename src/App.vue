@@ -6,8 +6,9 @@
       :clipped="$vuetify.breakpoint.lgAndUp"
       app
     >
+      <br /><br />
       <v-list>
-        <v-list-item>
+        <v-list-item to="/">
           <v-icon class="mr-2">mdi-flask</v-icon>
           <v-list-item-content>
             <v-list-item-title>
@@ -18,7 +19,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item>
+        <v-list-item to="/study">
           <v-icon class="mr-2">mdi-book-open-variant</v-icon>
           <v-list-item-content>
             <v-list-item-title>
@@ -29,7 +30,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item>
+        <v-list-item to="/tags">
           <v-icon class="mr-2">mdi-tag-multiple</v-icon>
           <v-list-item-content>
             <v-list-item-title>
@@ -40,7 +41,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item>
+        <v-list-item to="talk-to-jarvis">
           <v-icon class="mr-2">mdi-pyramid</v-icon>
           <v-list-item-content>
             <v-list-item-title>

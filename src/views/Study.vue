@@ -1,11 +1,11 @@
 <template>
   <v-container>
-    <p>List of Projects</p>
+    <p>List of Study Codes</p>
   </v-container>
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: 'Study',
 }
 </script>

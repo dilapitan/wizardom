@@ -1,11 +1,11 @@
 <template>
   <v-container>
-    <p>List of Projects</p>
+    <p>Is that you, sir?</p>
   </v-container>
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: 'Login',
 }
 </script>
