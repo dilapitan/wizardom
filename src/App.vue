@@ -26,9 +26,15 @@ export default {
     //
   }),
 
+  created() {
+    const theme = localStorage.getItem('dark_theme')
+    this.$vuetify.theme.dark = theme === 'true' ? true : false
+  },
+
   methods: {
     toggleTheme() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark
+      localStorage.setItem('dark_theme', this.$vuetify.theme.dark.toString())
     },
   },
 }
