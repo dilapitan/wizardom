@@ -64,7 +64,7 @@
       </v-app-bar-nav-icon>
 
       <v-toolbar-title>
-        <h2>Wizardom</h2>
+        <h2>WIZARDOM</h2>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -111,6 +111,6 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 #special-button {
-  font-family: 'Bungee', cursive !important;
+  font-family: 'Bungee' !important;
 }
 </style>
