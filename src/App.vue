@@ -6,6 +6,9 @@
       <v-btn icon color="primary" x-large>
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
+      <v-btn @click="toggleTheme()" icon color="primary" x-large>
+        <v-icon>mdi-fire-off</v-icon>
+      </v-btn>
     </v-app-bar>
 
     <v-main>
@@ -21,5 +24,11 @@ export default {
   data: () => ({
     //
   }),
+
+  methods: {
+    toggleTheme() {
+      console.log('hello')
+    },
+  },
 }
 </script>
