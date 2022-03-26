@@ -11,7 +11,9 @@
           <v-icon class="mr-2">mdi-flask</v-icon>
           <v-list-item-content>
             <v-list-item-title>
-              <span class="text-h6">PROJECTS</span>
+              <span id="special-button" class="text-h6 specialFont--text">
+                PROJECTS
+              </span>
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
@@ -20,7 +22,9 @@
           <v-icon class="mr-2">mdi-book-open-variant</v-icon>
           <v-list-item-content>
             <v-list-item-title>
-              <span class="text-h6">STUDY</span>
+              <span id="special-button" class="text-h6 specialFont--text">
+                STUDY
+              </span>
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
@@ -29,7 +33,9 @@
           <v-icon class="mr-2">mdi-tag-multiple</v-icon>
           <v-list-item-content>
             <v-list-item-title>
-              <span class="text-h6">TAGS</span>
+              <span id="special-button" class="text-h6 specialFont--text">
+                TAGS
+              </span>
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
@@ -38,7 +44,9 @@
           <v-icon class="mr-2">mdi-pyramid</v-icon>
           <v-list-item-content>
             <v-list-item-title>
-              <span class="text-h6">TALK TO JARVIS</span>
+              <span id="special-button" class="text-h6 specialFont--text">
+                TALK TO JARVIS
+              </span>
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
@@ -98,3 +106,11 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+#special-button {
+  font-family: 'Bungee', cursive !important;
+}
+</style>

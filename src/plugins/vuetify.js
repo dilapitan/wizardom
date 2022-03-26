@@ -13,6 +13,7 @@ export default new Vuetify({
         error: '#C1301D',
         navs: '#FFFFFF',
         background: '#DBE1E7',
+        specialFont: '#454E56',
       },
       dark: {
         primary: '#333F71',
@@ -21,6 +22,7 @@ export default new Vuetify({
         error: '#C1301D',
         navs: '#2A2E34',
         background: '#12181B',
+        specialFont: '#FFFFFF',
       },
     },
   },
