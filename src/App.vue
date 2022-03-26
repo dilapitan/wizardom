@@ -1,6 +1,49 @@
 <template>
   <v-app>
+    <v-navigation-drawer v-model="drawer" app>
+      <v-list>
+        <v-list-item>
+          <v-icon class="mr-2">mdi-flask</v-icon>
+          <v-list-item-content>
+            <v-list-item-title>
+              <span class="text-h6">PROJECTS</span>
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item>
+          <v-icon class="mr-2">mdi-book-open-variant</v-icon>
+          <v-list-item-content>
+            <v-list-item-title>
+              <span class="text-h6">STUDY</span>
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item>
+          <v-icon class="mr-2">mdi-tag-multiple</v-icon>
+          <v-list-item-content>
+            <v-list-item-title>
+              <span class="text-h6">TAGS</span>
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item>
+          <v-icon class="mr-2">mdi-pyramid</v-icon>
+          <v-list-item-content>
+            <v-list-item-title>
+              <span class="text-h6">TALK TO JARVIS</span>
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
     <v-app-bar app>
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer">
+        <v-icon>mdi-wizard-hat</v-icon>
+      </v-app-bar-nav-icon>
       <h2>Wizardom</h2>
       <v-spacer></v-spacer>
       <v-btn icon color="primary" x-large>
@@ -23,7 +66,7 @@ export default {
   name: 'App',
 
   data: () => ({
-    //
+    drawer: true,
   }),
 
   created() {
