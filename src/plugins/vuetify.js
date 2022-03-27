@@ -7,8 +7,8 @@ export default new Vuetify({
   theme: {
     themes: {
       light: {
-        primary: '#333F71',
-        secondary: '#46579B',
+        primary: '#46579B',
+        secondary: '#333F71',
         accent: '#D44C0C',
         error: '#C1301D',
         navs: '#FFFFFF',
@@ -16,8 +16,8 @@ export default new Vuetify({
         specialFont: '#454E56',
       },
       dark: {
-        primary: '#333F71',
-        secondary: '#46579B',
+        primary: '#46579B',
+        secondary: '#333F71',
         accent: '#D44C0C',
         error: '#C1301D',
         navs: '#2A2E34',
