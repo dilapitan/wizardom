@@ -9,16 +9,18 @@
     </v-img>
 
     <v-container>
-      <v-card-title>{{ data.title }}</v-card-title>
+      <v-card-title>
+        <h3 id="special-font">
+          {{ data.title }}
+        </h3>
+      </v-card-title>
       <v-card-text>
         <div>
           {{ data.description }}
         </div>
 
         <v-chip-group class="mt-2">
-          <v-chip v-for="tag in data.tags" :key="tag">
-            {{ tag }}
-          </v-chip>
+          <TagComponent v-for="tag in data.tags" :key="tag" :value="tag" />
         </v-chip-group>
       </v-card-text>
     </v-container>
@@ -26,8 +28,13 @@
 </template>
 
 <script>
+import TagComponent from '@/components/TagComponent'
+
 export default {
   name: 'CardComponent',
   props: ['data'],
+  components: {
+    TagComponent,
+  },
 }
 </script>
