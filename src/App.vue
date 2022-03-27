@@ -69,7 +69,7 @@
       <v-spacer></v-spacer>
 
       <v-dialog
-        v-model="dialog"
+        v-model="searchDialog"
         fullscreen
         hide-overlay
         transition="dialog-bottom-transition"
@@ -102,12 +102,17 @@
               <v-col cols="2">
                 <v-btn
                   v-if="$vuetify.breakpoint.smAndUp"
-                  @click="dialog = false"
+                  @click="searchDialog = false"
                   text
                 >
                   CANCEL
                 </v-btn>
-                <v-btn @click="dialog = false" v-else icon color="primary">
+                <v-btn
+                  @click="searchDialog = false"
+                  v-else
+                  icon
+                  color="primary"
+                >
                   <v-icon>mdi-close</v-icon>
                 </v-btn>
               </v-col>
@@ -135,14 +140,19 @@ export default {
   name: 'App',
 
   data: () => ({
-    drawer: true,
+    drawer: null,
     dialog: false,
+    searchDialog: false,
     searchInput: null,
   }),
 
   created() {
     const theme = localStorage.getItem('dark_theme')
     this.$vuetify.theme.dark = theme === 'true' ? true : false
+
+    // Set the drawer Opened for Large screens immediately, Closed for medium and below.
+    if (this.$vuetify.breakpoint.lgAndUp) this.drawer = true
+    else this.drawer = false
   },
 
   methods: {
