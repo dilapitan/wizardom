@@ -154,7 +154,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 #special-button {
