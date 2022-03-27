@@ -12,7 +12,7 @@
           <v-icon class="mr-2">mdi-flask</v-icon>
           <v-list-item-content>
             <v-list-item-title>
-              <span id="special-button" class="text-h6 specialFont--text">
+              <span id="special-font" class="text-h6 specialFont--text">
                 PROJECTS
               </span>
             </v-list-item-title>
@@ -23,7 +23,7 @@
           <v-icon class="mr-2">mdi-book-open-variant</v-icon>
           <v-list-item-content>
             <v-list-item-title>
-              <span id="special-button" class="text-h6 specialFont--text">
+              <span id="special-font" class="text-h6 specialFont--text">
                 STUDY
               </span>
             </v-list-item-title>
@@ -34,7 +34,7 @@
           <v-icon class="mr-2">mdi-tag-multiple</v-icon>
           <v-list-item-content>
             <v-list-item-title>
-              <span id="special-button" class="text-h6 specialFont--text">
+              <span id="special-font" class="text-h6 specialFont--text">
                 TAGS
               </span>
             </v-list-item-title>
@@ -45,7 +45,7 @@
           <v-icon class="mr-2">mdi-pyramid</v-icon>
           <v-list-item-content>
             <v-list-item-title>
-              <span id="special-button" class="text-h6 specialFont--text">
+              <span id="special-font" class="text-h6 specialFont--text">
                 TALK TO JARVIS
               </span>
             </v-list-item-title>
@@ -63,7 +63,7 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"> </v-app-bar-nav-icon>
 
       <v-toolbar-title>
-        <h2 id="special-button" class="primary--text">Wizardom</h2>
+        <h2 id="special-font" class="primary--text">Wizardom</h2>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -157,7 +157,7 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
-#special-button {
+#special-font {
   font-family: 'Bungee' !important;
 }
 </style>
