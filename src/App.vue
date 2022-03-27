@@ -67,9 +67,55 @@
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
-      <v-btn icon color="primary" x-large>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
+
+      <v-dialog
+        v-model="dialog"
+        fullscreen
+        hide-overlay
+        transition="dialog-bottom-transition"
+      >
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn icon color="primary" x-large v-bind="attrs" v-on="on">
+            <v-icon>mdi-magnify</v-icon>
+          </v-btn>
+        </template>
+
+        <v-card>
+          <br /><br />
+          <v-container>
+            <v-row>
+              <v-col cols="9" sm="8">
+                <v-text-field
+                  v-model="searchInput"
+                  hide-details
+                  label="Search"
+                  placeholder="Search"
+                  filled
+                  rounded
+                  dense
+                  single-line
+                  append-icon="mdi-magnify"
+                  class="mx-4"
+                  clearable
+                ></v-text-field>
+              </v-col>
+              <v-col cols="2">
+                <v-btn
+                  v-if="$vuetify.breakpoint.smAndUp"
+                  @click="dialog = false"
+                  text
+                >
+                  CANCEL
+                </v-btn>
+                <v-btn @click="dialog = false" v-else icon color="primary">
+                  <v-icon>mdi-close</v-icon>
+                </v-btn>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-card>
+      </v-dialog>
+
       <v-btn @click="toggleTheme()" icon color="accent" x-large>
         <v-icon v-if="!$vuetify.theme.dark">mdi-fire-off</v-icon>
         <v-icon v-else>mdi-fire</v-icon>
@@ -90,6 +136,8 @@ export default {
 
   data: () => ({
     drawer: true,
+    dialog: false,
+    searchInput: null,
   }),
 
   created() {
