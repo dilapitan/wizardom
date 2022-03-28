@@ -1,6 +1,15 @@
 <template>
   <v-container>
-    <p>List of Tags</p>
+    <br />
+
+    <h1 id="special-font" class="specialFont--text">
+      LIST OF
+      <span class="gradient-label">#TAGS</span>
+    </h1>
+
+    <v-divider></v-divider>
+
+    <br />
   </v-container>
 </template>
 

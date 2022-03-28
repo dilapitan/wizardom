@@ -170,4 +170,10 @@ export default {
 #special-font {
   font-family: 'Bungee' !important;
 }
+
+.gradient-label {
+  background-image: linear-gradient(90deg, #5e35b1, #01579b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 </style>

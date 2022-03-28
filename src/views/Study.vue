@@ -2,7 +2,10 @@
   <v-container>
     <br />
 
-    <h1 id="special-font" class="specialFont--text">LIST OF STUDY</h1>
+    <h1 id="special-font" class="specialFont--text">
+      LIST OF
+      <span class="gradient-label">STUDY</span>
+    </h1>
 
     <v-divider></v-divider>
 
