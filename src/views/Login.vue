@@ -10,6 +10,10 @@
     <v-divider></v-divider>
 
     <br />
+
+    <v-btn color="primary" id="special-font" x-large> It's me, Jarvis </v-btn>
+
+    <br />
   </v-container>
 </template>
 
@@ -21,7 +25,7 @@ export default {
 
 <style scoped>
 #jarvis-label {
-  background-image: linear-gradient(90deg, #c62828, #ffd600);
+  background-image: linear-gradient(90deg, #c62828, #ffab00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
